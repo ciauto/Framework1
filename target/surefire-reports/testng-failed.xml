@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.testsuite_smoke.TestCase_purchaseTicket">
+        <methods>
+          <include name="purchaseAirTicket"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testsuite_smoke.TestCase_purchaseTicket -->
+      <class name="com.testsuite_regression.TestCase_purchaseTicket">
+        <methods>
+          <include name="init"/>
+          <include name="closeBrowser"/>
+          <include name="purchaseAirTicket"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testsuite_regression.TestCase_purchaseTicket -->
+      <class name="com.testsuite_smoke.TestCase_Login">
+        <methods>
+          <include name="Logintest"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testsuite_smoke.TestCase_Login -->
+      <class name="com.testsuite_datadriven.TestCase_DataDriventTesting">
+        <methods>
+          <include name="Logintest" invocation-numbers="0 1"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testsuite_datadriven.TestCase_DataDriventTesting -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
